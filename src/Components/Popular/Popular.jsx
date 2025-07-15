@@ -1,5 +1,6 @@
 import { CiShoppingCart } from "react-icons/ci";
 import { IoIosStar } from "react-icons/io";
+import "./Popular.css"
 
 const Popular = () => {
 

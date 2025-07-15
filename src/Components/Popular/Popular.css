@@ -1,0 +1,44 @@
+.popular_component {
+  background-color: #ffffff;
+  color: #333;
+  padding: 80px 0;
+}
+
+.popular_component .section_header h2 {
+  color: #000;
+}
+
+.popular_component h3,
+.popular_component span,
+.popular_component button {
+  color: #333;
+}
+
+.popular_component .popular_content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.popular_variant button {
+  background-color: #e0e0e0;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.common_cart {
+  background-color: #c19977; /* coffee color */
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.common_cart:hover {
+  background-color: #a87b5c;
+}

@@ -1,0 +1,17 @@
+.order_btn {
+  background-color: #8a4f1b; /* light coffee color */
+  color: #ffffff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order_btn:hover {
+  background-color: #a87b5c; /* slightly darker coffee color on hover */
+}

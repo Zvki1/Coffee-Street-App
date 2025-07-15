@@ -1,10 +1,8 @@
-import About from "../../Components/About/About";
 import Banner from "../../Components/Banner/Banner";
 import Delivery from "../../Components/Devlivery/Delivery";
 import Popular from "../../Components/Popular/Popular";
 import Review from "../../Components/Review/Review";
 import Special from "../../Components/Special/Special";
-import Subscribe from './../../Components/Subscribe/Subscribe';
 
 const Home = () => {
     return (
@@ -25,11 +23,6 @@ const Home = () => {
             <Delivery></Delivery>
 
 
-            {/* about us component  */}
-            <About></About>
-
-
-
             {/* special component  */}
             <Special></Special>
 
@@ -38,9 +31,7 @@ const Home = () => {
             <Review></Review>
 
 
-            {/* subscribe component  */}
-            <Subscribe />
-
+          
         </div>
     );
 };

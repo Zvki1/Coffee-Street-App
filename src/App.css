@@ -145,7 +145,7 @@ a.active {
   width: 100%;
   min-height: 1004px;
   height: 100%;
-  background-image: url('../src/assets/bg/bg_1.png');
+  background-image: url('../src/assets/bg/bg_kawa.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -371,7 +371,6 @@ a.active {
   content: '';
   width: 100%;
   height: 100%;
-  background-image: url('/src/assets/bg/bg_2.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -385,7 +384,7 @@ a.active {
   content: '';
   width: 100%;
   height: 100%;
-  background-color: #f6ebda;
+  background-color: #ffffff;
   z-index: 1;
 }
 
@@ -481,7 +480,7 @@ a.active {
   max-width: 995px;
   width: 100%;
   height: 100%;
-  background-image: url('/src/assets/bg/bg_2.png');
+  /* background-image: url('/src/assets/bg/bg_2.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -496,7 +495,7 @@ a.active {
   max-width: 995px;
   width: 100%;
   height: 100%;
-  background-color: #f6ebda;
+  background-color: #ffffff;
   z-index: 1;
 }
 
