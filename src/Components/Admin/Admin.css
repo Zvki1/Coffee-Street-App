@@ -1,0 +1,125 @@
+.admin-wrapper {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-sidebar {
+  width: 240px;
+  background-color: #4e342e;
+  color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin: 1rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.admin-sidebar li:hover {
+  background-color: #6d4c41;
+}
+
+.admin-content {
+  flex-grow: 1;
+  padding: 3rem;
+  background: linear-gradient(to right, #ffd2a6, #d47e1b);
+  color: #3e2723;
+  overflow-y: auto;
+}
+
+.admin-overview {
+  text-align: center;
+}
+
+.admin-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background-color: #fffdf9;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+/* Coffee Style Table */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  background-color: #fffaf3;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+thead {
+  background-color: #6d4c41;
+  color: #fff;
+}
+
+thead th {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+tbody td {
+  padding: 0.75rem;
+  border-top: 1px solid #e0cfc1;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fdf5ee;
+}
+
+tbody tr:hover {
+  background-color: #f6e7dc;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button.btn-warning {
+  background-color: #f4a261;
+  border: none;
+}
+
+button.btn-warning:hover {
+  background-color: #e07b39;
+}
+.admin-overview .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.admin-overview .col-md-6 {
+  flex: 1 1 45%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}

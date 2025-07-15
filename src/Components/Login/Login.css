@@ -1,0 +1,65 @@
+.login-page {
+  background-image: url('../../assets/bg/bg_3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.card {
+  background-color: rgba(255, 248, 240, 0.95); /* Light creamy background */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(80, 40, 20, 0.2);
+  border: 1px solid #e0c3a0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-label {
+  color: #5c3d2e; /* Dark coffee brown */
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #d2b48c;
+  padding: 0.75rem;
+  background-color: #fffdf8;
+  color: #3e2c20;
+}
+
+.form-control:focus {
+  border-color: #a9744f;
+  box-shadow: 0 0 0 0.2rem rgba(169, 116, 79, 0.25);
+}
+
+.btn-primary {
+  background-color: #6f4e37; /* Coffee brown */
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5a3b27;
+}
+
+.card h2 {
+  color: #3e2c20;
+}
+
+.signup-link {
+  color: #5c3d2e; /* Rich coffee brown */
+  font-size: 0.95rem;
+}
+
+.signup-link a {
+  color: #a9744f; /* Caramel tone for the link */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #5a3b27;
+  text-decoration: underline;
+}

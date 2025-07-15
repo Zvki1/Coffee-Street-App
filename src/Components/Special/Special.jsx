@@ -56,7 +56,7 @@ const Special = () => {
     ]
 
     return (
-        <div className="special_component">
+        <div className="special_component" id="product">
             <div className="container">
 
                 {/* section header  */}

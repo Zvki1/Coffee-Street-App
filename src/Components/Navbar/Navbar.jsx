@@ -2,6 +2,8 @@ import { Link } from "react-router";
 import Desktop from "./Desktop/Desktop";
 import Mobile from "./Mobile/Mobile";
 import { useState } from "react";
+import "./navbar.css";
+
 
 const Navbar = () => {
 
@@ -15,7 +17,7 @@ const Navbar = () => {
 
                     {/* logo wrapper  */}
                     <div className="logo_wrapper">
-                        <Link to='/'><img src="/src/assets/logo/logo_coffe.svg" alt="logo" /></Link>
+                        <Link to='/'><img src="/src/assets/logo/logo_coffee.png" alt="logo" /></Link>
                     </div>
 
                     {/* navbar wrapper  */}

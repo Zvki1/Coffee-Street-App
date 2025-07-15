@@ -1,5 +1,5 @@
 import ReviewSlider from "../ReviewSlider/ReviewSlider";
-
+import "./Review.css"
 const Review = () => {
     return (
         <div className="review_component d-flex align-items-center justify-content-center">
@@ -12,7 +12,8 @@ const Review = () => {
                     </div>
                     <h3>we provide quality coffee, and ready to delivery</h3>
                     <p>we are a company that makes and distributes delicious drinks. our main product is mode with a secret recipe and available in sores worldwide</p>
-                    <button className="common_btn">get your coffee</button>
+                    <button className="order_btn">get your coffee</button>
+
                 </div>
 
                 <div className="slider_wrapper">

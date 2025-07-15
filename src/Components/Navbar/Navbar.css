@@ -1,0 +1,22 @@
+/* navbar.css */
+
+.logo_wrapper img {
+  width: 100px;
+  height: auto;
+  transition: 0.3s ease;
+ 
+}
+
+.logo_wrapper {
+  margin-left: 10px;
+}
+
+.header_component {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 0;
+  
+  
+}
+html {
+  scroll-behavior: smooth;
+}

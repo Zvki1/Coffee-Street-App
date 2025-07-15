@@ -1,37 +1,50 @@
+import { useState } from "react";
 import { Link, NavLink } from "react-router";
-import { CiSearch } from "react-icons/ci";
-import { CiShoppingCart } from "react-icons/ci";
+import { CiSearch, CiShoppingCart, CiUser } from "react-icons/ci";
 import { FaBarsStaggered } from "react-icons/fa6";
 
-const Desktop = ({openMenu , setMenu}) => {
-    return (
-        <div className="d-flex align-items-center gap-5">
-            
-            <nav className="d-none d-lg-flex align-items-center gap-4 navigationbar">
-                <NavLink to='/' className={({isActive}) => {
-                    return isActive ? 'active' :''
-                }}>about us</NavLink>
-                
-                <NavLink to='_blank' className={({isActive}) => {
-                    return isActive ? 'active' :''
-                }}>our product</NavLink>
+const Desktop = ({ openMenu, setMenu }) => {
+  const [showDropdown, setShowDropdown] = useState(false);
 
-                <NavLink to='_blank'  className={({isActive}) => {
-                   return isActive ? 'active' :''
-                }}>delivery</NavLink>
-            </nav>
+  return (
+    <div className="d-flex align-items-center gap-5 position-relative">
+      <nav className="d-none d-lg-flex align-items-center gap-4 navigationbar">
+          <a href="#product" className="nav-link">
+          About Us
+        </a>
+       
+        <a href="#product" className="nav-link">
+          our product
+        </a>
 
-            <div className="desktop_right_wrapper d-flex align-items-center gap-4">
-                <form action="#" className="d-none d-lg-block">
-                    <input type="text" placeholder="Cappuccino" />
-                    <button> <CiSearch fontSize='1.5rem' color="#000000" /> </button>
-                </form>
+        <a href="#delivery" className="nav-link">
+          delivery
+        </a>
+      </nav>
 
-                <button><Link className="cart_icon"><CiShoppingCart fontSize='2rem' color="#000000" /></Link></button>
-            </div>
-            <button onClick={() => setMenu(!openMenu)}  className="d-block d-lg-none"><FaBarsStaggered fontSize='2rem' color="#000000" /></button>
-        </div>
-    );
+      <div className="desktop_right_wrapper d-flex align-items-center gap-4 position-relative">
+        <button onClick={() => setShowDropdown(!showDropdown)}>
+          <span className="user_icon">
+            <CiUser fontSize="2rem" color="#000000" />
+          </span>
+        </button>
+
+        {showDropdown && (
+          <div className="dropdown-menu show p-2 position-absolute top-100 start-0 mt-2 bg-white border rounded">
+            <Link to="/login" className="dropdown-item">
+              Se connecter
+            </Link>
+          </div>
+        )}
+
+        
+      </div>
+
+      <button onClick={() => setMenu(!openMenu)} className="d-block d-lg-none">
+        <FaBarsStaggered fontSize="2rem" color="#000000" />
+      </button>
+    </div>
+  );
 };
 
 export default Desktop;
