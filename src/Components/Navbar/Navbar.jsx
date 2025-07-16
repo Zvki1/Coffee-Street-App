@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import Desktop from "./Desktop/Desktop";
 import Mobile from "./Mobile/Mobile";
 import { useState } from "react";
-import "./navbar.css";
+import "./Navbar.css";
 
 
 const Navbar = () => {
