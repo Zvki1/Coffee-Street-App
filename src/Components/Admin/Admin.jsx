@@ -844,7 +844,7 @@ const Admin = () => {
                   <PieChart>
                     <Pie data={orderChartData} dataKey="value" nameKey="name" outerRadius={80} label>
                       {orderChartData.map((_, i) => (
-                        <Cell key={i} fill={["#82ca9d", "#8884d8", "#ffc658"][i % 3]} />
+                        <Cell key={i} fill={["#82ca9d", "#FF0000", "#ffc658"][i % 3]} />
                       ))}
                     </Pie>
                     <Tooltip />

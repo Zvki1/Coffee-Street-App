@@ -234,7 +234,7 @@ const ClientDashboard = () => {
       // Refresh orders after successful checkout
       fetchOrders();
 
-      alert("Commande confirmée !");
+      alert("commande passé veuillez visiter la liste des commandes pour voir son etat");
     } catch (error) {
       console.error("Error creating order:", error);
       alert(`Erreur lors de la création de la commande: ${error.message}`);
@@ -391,8 +391,8 @@ const ClientDashboard = () => {
                         {/* Handle image - use placeholder if no image */}
                         <img
                           src={
-                            product.image ||
-                            "/src/assets/popular/coffeProduct.jpg"
+                           
+                            `/src/assets/popular/c${(product.id % 4) + 1}.png`
                           }
                           className="card-img-top"
                           alt={product.name}
@@ -411,8 +411,8 @@ const ClientDashboard = () => {
                             {formatPrice(product.price)}
                           </p>
                           <div className="d-flex justify-content-between align-items-center mt-auto">
-                            <span className="text-warning d-flex align-items-center gap-1">
-                              {product.rating || "4.0"} <IoIosStar />
+                            <span className=" d-flex align-items-center gap-1">
+                            QTE: {product.quantity}
                             </span>
                             <button
                               onClick={() => handleAddToCart(product)}
